@@ -5,3 +5,7 @@ A similar situation arises when you need to perform a series of operations for w
 One thing to be careful of is overusing the Command pattern when there is no need. In this example we have built up a specific command class to handle deleting a file but we could also simply just run...  
 
 `File.delete 'file.txt'` 
+
+With the Command pattern, we construct objects that know how to perform some very specific actions. The key word here is "specific." A command instance in the Command pattern doesn't know how to change any employee's address; instead, it knows how to move one specific employee to his new house. 
+
+Commands are useful for keeping a running list of things that your program needs to do, or for remembering what it has already done. You can also run your commands backward and undo the things that your program has done. Depending on the complexity of your commands, you can implement them either as a full-scale class or as a simple code block.
