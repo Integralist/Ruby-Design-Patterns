@@ -5,7 +5,9 @@ class Command
         @description = description
     end
 
-    def execute end
+    def execute 
+        # Interface
+    end
 end
 
 class CreateFile < Command
